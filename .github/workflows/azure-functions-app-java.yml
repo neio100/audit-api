@@ -23,7 +23,7 @@ jobs:
           azure-subscription: ${{ env.AZURE_SUBSCRIPTION }}
           action: deploy
           service-name: 'enterprise-services'
-          app-name: 'test'
-          use-staging-deployment: true
+          app-name: 'audit-test'
+          use-staging-deployment: false
           package: ${{ env.ASC_PACKAGE_PATH }}
           builder: 'testsef'
