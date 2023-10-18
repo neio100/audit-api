@@ -19,7 +19,7 @@ jobs:
           java-version: '17'
       - name: gradlew assemble
         run: |
-            gradlew assemble
+            gradle assemble
 
       - name: Login via Azure CLI
         uses: azure/login@v1
