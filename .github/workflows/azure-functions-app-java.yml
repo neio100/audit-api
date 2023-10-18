@@ -17,9 +17,9 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: maven build, clean
+      - name: gradlew assemble
         run: |
-            mvn clean package
+            gradlew assemble
 
       - name: Login via Azure CLI
         uses: azure/login@v1
